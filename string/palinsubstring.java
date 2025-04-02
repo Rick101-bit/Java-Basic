@@ -13,7 +13,7 @@ public class palinsubstring {
 
             }
             i++;
-            j++;
+            j--;
         }
         return true;
     }
@@ -22,14 +22,15 @@ public class palinsubstring {
         String str =input.nextLine();
         int count =0;
         for(int i =0;i<str.length();i++){
-            for(int j =i+1;j<=str.length()+1;j++){
+            for(int j =i+1;j<=str.length();j++){
                 if(ispalindrome(str.substring(i,j))==true){
-                    System.out.println(str.substring(i,j));
+                    System.out.print(str.substring(i,j)+" ");
                     count ++;
                 }
 
             }
         }
+        System.out.println("the number palindrome substring is "+count);
     }
     
 }
