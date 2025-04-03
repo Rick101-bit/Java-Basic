@@ -1,4 +1,4 @@
-package onesarray;
+
 
 import java.util.Scanner;
 public class maxarray {
